@@ -1,5 +1,5 @@
 # Screenshots
-![Image Alt]([image_url](https://github.com/Mimaguel/logic-gate-academy/blob/c88118e8b1fdfcd4fe5173d66999870789f8c267/assets/Screenshots/1.png)).
+![Image Alt](https://github.com/Mimaguel/logic-gate-academy/blob/c88118e8b1fdfcd4fe5173d66999870789f8c267/assets/Screenshots/1.png)
 
 # Logic Gate Academy
 A desktop game that teaches **logic gates** (all seven: AND, OR, NOT, XOR,
