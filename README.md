@@ -1,5 +1,5 @@
 # Logic Gate Academy
-
+![Main Menu](assets/screenshots/mainmenu.png)
 A desktop game that teaches **logic gates** (all seven: AND, OR, NOT, XOR,
 NAND, NOR, XNOR), **binary numbers**, and **ASCII encoding**. Built with
 **PySide6**, laid out in a **Qt Designer-editable `.ui` file**, styled with
