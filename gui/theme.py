@@ -1,7 +1,7 @@
 """
 gui/theme.py
 =================
-Visual theme for Logic Gate Academy: a bold red/black/white palette with
+Visual theme for Sirkitry: a bold red/black/white palette with
 condensed display type, inspired by the general conventions of stylish,
 high-contrast "action game" UI design (thick color-blocking, sharp
 rectangular panels, bold uppercase type, neon-red glow accents) - this is

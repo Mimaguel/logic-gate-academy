@@ -64,7 +64,7 @@ def generate_pdf_report(entries: List[ScoreEntry], account_count: int, output_pa
     pdf.add_page()
 
     pdf.set_font("Helvetica", "B", 18)
-    pdf.cell(0, 12, "Logic Gate Academy - Leaderboard Report", new_x="LMARGIN", new_y="NEXT")
+    pdf.cell(0, 12, "Sirkitry - Leaderboard Report", new_x="LMARGIN", new_y="NEXT")
     pdf.set_font("Helvetica", "", 10)
     pdf.set_text_color(90, 90, 90)
     pdf.cell(0, 8, f"Generated {datetime.now().strftime('%Y-%m-%d %H:%M')}", new_x="LMARGIN", new_y="NEXT")
