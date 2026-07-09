@@ -1,5 +1,7 @@
 # Screenshots
-![Image Alt](https://github.com/Mimaguel/logic-gate-academy/blob/c88118e8b1fdfcd4fe5173d66999870789f8c267/assets/Screenshots/1.png)
+![Image MainMenu](https://github.com/Mimaguel/logic-gate-academy/blob/c88118e8b1fdfcd4fe5173d66999870789f8c267/assets/Screenshots/1.png)
+![Image Login](https://github.com/Mimaguel/logic-gate-academy/blob/559b9e0c9e0210a73735c3f5ba57d18ae9fcbc17/assets/Screenshots/2.png)
+![Image BonusRound](https://github.com/Mimaguel/logic-gate-academy/blob/559b9e0c9e0210a73735c3f5ba57d18ae9fcbc17/assets/Screenshots/3.png)
 
 # Logic Gate Academy
 A desktop game that teaches **logic gates** (all seven: AND, OR, NOT, XOR,
