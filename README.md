@@ -213,3 +213,14 @@ freely in Qt Designer.
   `assets/fonts/` (keeping the same filenames), or edit
   `generate_sounds.py` / `gui/theme.py`'s `FONT_FILES` list to point at
   new ones.
+
+
+## Acknowledgments
+
+This project originated as a collaborative final project for a Computer Engineering Technology course, initially designed as a terminal-based (CLI) Python program. The core concept—answering logic gate questions to build a binary code that reveals a hidden ASCII character was born from that group effort.
+
+To expand on that foundation, I completely rebuilt the application from the ground up into the version you see in this repository. This fresh implementation introduces a full PySide6 GUI, an encrypted local database, an admin dashboard, data charting, and custom theming.
+
+Huge credit goes to my original groupmates for the concept that sparked this evolution. I would love for this project to keep growing, so contributions are always open and warmly welcomed especially from the original team!
+
+Credit to my original project groupmates for the concept this evolved from.
