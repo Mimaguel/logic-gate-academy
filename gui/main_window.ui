@@ -17,10 +17,13 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Logic Gate Academy</string>
+   <string>Sirkitry</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="centralVerticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
     <property name="leftMargin">
      <number>0</number>
     </property>
@@ -33,21 +36,21 @@
     <property name="bottomMargin">
      <number>0</number>
     </property>
-    <property name="spacing">
-     <number>0</number>
-    </property>
     <item>
      <widget class="QFrame" name="topBanner">
-      <property name="role" stdset="0">
-       <string>topBanner</string>
-      </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
         <height>56</height>
        </size>
       </property>
+      <property name="role" stdset="0">
+       <string>topBanner</string>
+      </property>
       <layout class="QHBoxLayout" name="topBannerLayout">
+       <property name="spacing">
+        <number>10</number>
+       </property>
        <property name="leftMargin">
         <number>24</number>
        </property>
@@ -60,13 +63,10 @@
        <property name="bottomMargin">
         <number>0</number>
        </property>
-       <property name="spacing">
-        <number>10</number>
-       </property>
        <item>
         <widget class="QLabel" name="lblBrandTitle">
          <property name="text">
-          <string>LOGIC GATE ACADEMY</string>
+          <string>SIRKITRY</string>
          </property>
          <property name="role" stdset="0">
           <string>brandTitle</string>
@@ -78,30 +78,30 @@
          <property name="text">
           <string>● SYSTEM ONLINE</string>
          </property>
+         <property name="alignment">
+          <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+         </property>
          <property name="role" stdset="0">
           <string>brandStatus</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignRight|Qt::AlignVCenter</set>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QPushButton" name="btnMuteToggle">
-         <property name="text">
-          <string>🔊 SOUND</string>
-         </property>
-         <property name="role" stdset="0">
-          <string>ghost</string>
-         </property>
-         <property name="cursor">
-          <cursorShape>Qt::PointingHandCursor</cursorShape>
-         </property>
          <property name="maximumSize">
           <size>
            <width>120</width>
            <height>32</height>
           </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="text">
+          <string>🔊 SOUND</string>
+         </property>
+         <property name="role" stdset="0">
+          <string>ghost</string>
          </property>
         </widget>
        </item>
@@ -110,21 +110,27 @@
     </item>
     <item>
      <widget class="QFrame" name="topBannerAccent">
-      <property name="role" stdset="0">
-       <string>accentStrip</string>
-      </property>
       <property name="minimumSize">
        <size>
         <width>0</width>
         <height>4</height>
        </size>
       </property>
+      <property name="role" stdset="0">
+       <string>accentStrip</string>
+      </property>
      </widget>
     </item>
     <item>
      <widget class="QStackedWidget" name="stack">
+      <property name="currentIndex">
+       <number>4</number>
+      </property>
       <widget class="QWidget" name="page_main_menu">
        <layout class="QVBoxLayout" name="layout_main_menu">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -137,28 +143,25 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblMainTitle">
-          <property name="text">
-           <string>LOGIC GATE ACADEMY</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>26</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>heroTitle</string>
+          <property name="text">
+           <string>SIRKITRY</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>heroTitle</string>
           </property>
          </widget>
         </item>
@@ -167,21 +170,21 @@
           <property name="text">
            <string>Learn logic gates, binary numbers, and ASCII by playing.</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>subtitle</string>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
-          </property>
          </widget>
         </item>
         <item>
          <spacer name="spacer_main_top">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -193,9 +196,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnStartChallenge">
-          <property name="text">
-           <string>Start Challenge</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -203,7 +203,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Start Challenge</string>
           </property>
           <property name="role" stdset="0">
            <string>primary</string>
@@ -212,9 +215,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnViewLeaderboard">
-          <property name="text">
-           <string>View Leaderboard</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -222,7 +222,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>View Leaderboard</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -231,9 +234,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnTutorial">
-          <property name="text">
-           <string>Tutorial</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -241,7 +241,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Tutorial</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -250,9 +253,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnLearningMode">
-          <property name="text">
-           <string>Learning Mode</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -260,7 +260,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Learning Mode</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -269,9 +272,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnAdminDashboard">
-          <property name="text">
-           <string>Admin Dashboard</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -279,7 +279,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Admin Dashboard</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -288,9 +291,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnQuit">
-          <property name="text">
-           <string>Quit</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -298,7 +298,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Quit</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -308,7 +311,7 @@
         <item>
          <spacer name="spacer_main_bottom">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -322,6 +325,9 @@
       </widget>
       <widget class="QWidget" name="page_login_menu">
        <layout class="QVBoxLayout" name="layout_login_menu">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -334,35 +340,32 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblLoginTitle">
-          <property name="text">
-           <string>LOGIN</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>LOGIN</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
         <item>
          <spacer name="spacer_login_top">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -374,9 +377,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnCreateAccount">
-          <property name="text">
-           <string>Create Account</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -384,7 +384,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Create Account</string>
           </property>
           <property name="role" stdset="0">
            <string>primary</string>
@@ -393,9 +396,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnLoginExisting">
-          <property name="text">
-           <string>Login to Existing Account</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -403,7 +403,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Login to Existing Account</string>
           </property>
           <property name="role" stdset="0">
            <string>primary</string>
@@ -412,9 +415,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnPlayGuest">
-          <property name="text">
-           <string>Play as Guest</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -422,7 +422,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Play as Guest</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -431,9 +434,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnLoginBack">
-          <property name="text">
-           <string>Back to Main Menu</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -441,7 +441,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back to Main Menu</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -451,7 +454,7 @@
         <item>
          <spacer name="spacer_login_bottom">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -465,6 +468,9 @@
       </widget>
       <widget class="QWidget" name="page_credentials">
        <layout class="QVBoxLayout" name="layout_credentials">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -477,35 +483,32 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblCredTitle">
-          <property name="text">
-           <string>Create Account</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>Create Account</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
         <item>
          <spacer name="spacer_cred_top">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -530,14 +533,14 @@
         </item>
         <item>
          <widget class="QLineEdit" name="txtUsername">
-          <property name="placeholderText">
-           <string>Enter username</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
             <height>38</height>
            </size>
+          </property>
+          <property name="placeholderText">
+           <string>Enter username</string>
           </property>
          </widget>
         </item>
@@ -556,17 +559,17 @@
         </item>
         <item>
          <widget class="QLineEdit" name="txtPassword">
-          <property name="placeholderText">
-           <string>Enter password</string>
-          </property>
-          <property name="echoMode">
-           <enum>QLineEdit::Password</enum>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
             <height>38</height>
            </size>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::EchoMode::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Enter password</string>
           </property>
          </widget>
         </item>
@@ -585,17 +588,17 @@
         </item>
         <item>
          <widget class="QLineEdit" name="txtConfirmPassword">
-          <property name="placeholderText">
-           <string>Re-enter password</string>
-          </property>
-          <property name="echoMode">
-           <enum>QLineEdit::Password</enum>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
             <height>38</height>
            </size>
+          </property>
+          <property name="echoMode">
+           <enum>QLineEdit::EchoMode::Password</enum>
+          </property>
+          <property name="placeholderText">
+           <string>Re-enter password</string>
           </property>
          </widget>
         </item>
@@ -614,6 +617,9 @@
         </item>
         <item>
          <layout class="QHBoxLayout" name="row_cred_buttons">
+          <property name="spacing">
+           <number>12</number>
+          </property>
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -626,14 +632,8 @@
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <property name="spacing">
-           <number>12</number>
-          </property>
           <item>
            <widget class="QPushButton" name="btnCredBack">
-            <property name="text">
-             <string>Back</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -641,7 +641,10 @@
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Back</string>
             </property>
             <property name="role" stdset="0">
              <string>ghost</string>
@@ -650,9 +653,6 @@
           </item>
           <item>
            <widget class="QPushButton" name="btnCredSubmit">
-            <property name="text">
-             <string>Submit</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -660,7 +660,10 @@
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Submit</string>
             </property>
             <property name="role" stdset="0">
              <string>primary</string>
@@ -672,7 +675,7 @@
         <item>
          <spacer name="spacer_cred_bottom">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -686,6 +689,9 @@
       </widget>
       <widget class="QWidget" name="page_difficulty">
        <layout class="QVBoxLayout" name="layout_difficulty">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -698,35 +704,32 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblDifficultyTitle">
-          <property name="text">
-           <string>CHOOSE A DIFFICULTY</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>CHOOSE A DIFFICULTY</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
         <item>
          <spacer name="spacer_difficulty_top">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -738,9 +741,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnDifficultyEasy">
-          <property name="text">
-           <string>Easy  -  AND / OR / NOT</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -748,7 +748,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Easy  -  AND / OR / NOT</string>
           </property>
           <property name="role" stdset="0">
            <string>difficultyEasy</string>
@@ -757,9 +760,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnDifficultyMedium">
-          <property name="text">
-           <string>Medium  -  + XOR / NAND</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -767,7 +767,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Medium  -  + XOR / NAND</string>
           </property>
           <property name="role" stdset="0">
            <string>difficultyMedium</string>
@@ -776,9 +779,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnDifficultyHard">
-          <property name="text">
-           <string>Hard  -  All 7 Gates</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -786,7 +786,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Hard  -  All 7 Gates</string>
           </property>
           <property name="role" stdset="0">
            <string>difficultyHard</string>
@@ -795,9 +798,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnDifficultyBack">
-          <property name="text">
-           <string>Back</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -805,7 +805,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -815,7 +818,7 @@
         <item>
          <spacer name="spacer_difficulty_bottom">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -829,6 +832,9 @@
       </widget>
       <widget class="QWidget" name="page_challenge">
        <layout class="QVBoxLayout" name="layout_challenge">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -841,28 +847,25 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblChallengeHeader">
-          <property name="text">
-           <string>Round 1 of 7</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>Round 1 of 7</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
@@ -871,22 +874,41 @@
           <property name="text">
            <string>Lives remaining: 5</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>liveStat</string>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTextBrowser" name="txtQuestion">
+          <property name="font">
+           <font>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QTextBrowser" name="txtQuestion"/>
-        </item>
-        <item>
          <layout class="QHBoxLayout" name="row_challenge_answers">
+          <property name="spacing">
+           <number>12</number>
+          </property>
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -899,14 +921,8 @@
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <property name="spacing">
-           <number>12</number>
-          </property>
           <item>
            <widget class="QPushButton" name="btnAnswer0">
-            <property name="text">
-             <string>0</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -914,7 +930,10 @@
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>0</string>
             </property>
             <property name="role" stdset="0">
              <string>answerButton</string>
@@ -923,9 +942,6 @@
           </item>
           <item>
            <widget class="QPushButton" name="btnAnswer1">
-            <property name="text">
-             <string>1</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -933,7 +949,10 @@
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>1</string>
             </property>
             <property name="role" stdset="0">
              <string>answerButton</string>
@@ -947,22 +966,19 @@
           <property name="text">
            <string/>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>feedback</string>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
-          </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btnChallengeQuit">
-          <property name="text">
-           <string>Quit to Main Menu</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -970,7 +986,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Quit to Main Menu</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -981,6 +1000,9 @@
       </widget>
       <widget class="QWidget" name="page_bonus_round">
        <layout class="QVBoxLayout" name="layout_bonus">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -993,28 +1015,25 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblBonusTitle">
-          <property name="text">
-           <string>BONUS ROUND - DECODE YOUR SECRET CHARACTER</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>16</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>BONUS ROUND - DECODE YOUR SECRET CHARACTER</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
@@ -1023,27 +1042,27 @@
           <property name="text">
            <string>Your binary code is: -------</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>liveStat</string>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
-          </property>
          </widget>
         </item>
         <item>
          <widget class="QTableWidget" name="tblBonusReference">
-          <property name="columnCount">
-           <number>2</number>
-          </property>
           <property name="editTriggers">
-           <set>QAbstractItemView::NoEditTriggers</set>
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
           </property>
           <property name="selectionMode">
-           <enum>QAbstractItemView::NoSelection</enum>
+           <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
+          </property>
+          <property name="columnCount">
+           <number>2</number>
           </property>
           <attribute name="horizontalHeaderStretchLastSection">
            <bool>true</bool>
@@ -1065,22 +1084,19 @@
         </item>
         <item>
          <widget class="QLineEdit" name="txtBonusGuess">
-          <property name="placeholderText">
-           <string>Type the character</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
             <height>38</height>
            </size>
           </property>
+          <property name="placeholderText">
+           <string>Type the character</string>
+          </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btnBonusSubmit">
-          <property name="text">
-           <string>Submit Guess</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1088,7 +1104,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Submit Guess</string>
           </property>
           <property name="role" stdset="0">
            <string>primary</string>
@@ -1100,22 +1119,19 @@
           <property name="text">
            <string/>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>feedback</string>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
-          </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btnBonusContinue">
-          <property name="text">
-           <string>Back to Main Menu</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1123,7 +1139,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back to Main Menu</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1134,6 +1153,9 @@
       </widget>
       <widget class="QWidget" name="page_leaderboard">
        <layout class="QVBoxLayout" name="layout_leaderboard">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -1146,41 +1168,38 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblLeaderboardTitle">
-          <property name="text">
-           <string>LEADERBOARD</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>LEADERBOARD</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QTableWidget" name="tblLeaderboard">
-          <property name="columnCount">
-           <number>4</number>
-          </property>
           <property name="editTriggers">
-           <set>QAbstractItemView::NoEditTriggers</set>
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
           </property>
           <property name="selectionMode">
-           <enum>QAbstractItemView::NoSelection</enum>
+           <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
+          </property>
+          <property name="columnCount">
+           <number>4</number>
           </property>
           <attribute name="horizontalHeaderStretchLastSection">
            <bool>true</bool>
@@ -1212,9 +1231,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnLeaderboardBack">
-          <property name="text">
-           <string>Back</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1222,7 +1238,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -1233,6 +1252,9 @@
       </widget>
       <widget class="QWidget" name="page_tutorial">
        <layout class="QVBoxLayout" name="layout_tutorial">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -1245,28 +1267,25 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblTutorialHeading">
-          <property name="text">
-           <string>Tutorial - Welcome</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>Tutorial - Welcome</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
@@ -1275,14 +1294,14 @@
           <property name="text">
            <string>Page 1 / 5</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>liveStat</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
           </property>
          </widget>
         </item>
@@ -1291,6 +1310,9 @@
         </item>
         <item>
          <layout class="QHBoxLayout" name="row_tutorial_buttons">
+          <property name="spacing">
+           <number>12</number>
+          </property>
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -1303,14 +1325,8 @@
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <property name="spacing">
-           <number>12</number>
-          </property>
           <item>
            <widget class="QPushButton" name="btnTutorialBack">
-            <property name="text">
-             <string>Back</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -1318,7 +1334,10 @@
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Back</string>
             </property>
             <property name="role" stdset="0">
              <string>secondary</string>
@@ -1327,9 +1346,6 @@
           </item>
           <item>
            <widget class="QPushButton" name="btnTutorialNext">
-            <property name="text">
-             <string>Next</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -1337,7 +1353,10 @@
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Next</string>
             </property>
             <property name="role" stdset="0">
              <string>primary</string>
@@ -1346,9 +1365,6 @@
           </item>
           <item>
            <widget class="QPushButton" name="btnTutorialFinish">
-            <property name="text">
-             <string>Finish</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -1356,7 +1372,10 @@
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Finish</string>
             </property>
             <property name="role" stdset="0">
              <string>primary</string>
@@ -1369,6 +1388,9 @@
       </widget>
       <widget class="QWidget" name="page_learning_menu">
        <layout class="QVBoxLayout" name="layout_learning_menu">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -1381,35 +1403,32 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblLearningTitle">
-          <property name="text">
-           <string>LEARNING MODE</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>LEARNING MODE</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
         <item>
          <spacer name="spacer_learning_top">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -1421,9 +1440,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnPracticeGates">
-          <property name="text">
-           <string>Practice: Logic Gate Questions</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1431,7 +1447,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Practice: Logic Gate Questions</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1440,9 +1459,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnPracticeNumbers">
-          <property name="text">
-           <string>Practice: Binary &amp; ASCII Questions</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1450,7 +1466,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Practice: Binary &amp; ASCII Questions</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1459,9 +1478,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnExplainGates">
-          <property name="text">
-           <string>Explain: Logic Gates</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1469,7 +1485,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Explain: Logic Gates</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1478,9 +1497,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnExplainBinary">
-          <property name="text">
-           <string>Explain: Binary Numbers</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1488,7 +1504,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Explain: Binary Numbers</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1497,9 +1516,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnExplainAscii">
-          <property name="text">
-           <string>Explain: ASCII</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1507,7 +1523,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Explain: ASCII</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1516,9 +1535,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnLearningBack">
-          <property name="text">
-           <string>Back to Main Menu</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1526,7 +1542,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back to Main Menu</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -1536,7 +1555,7 @@
         <item>
          <spacer name="spacer_learning_bottom">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -1550,6 +1569,9 @@
       </widget>
       <widget class="QWidget" name="page_number_practice_menu">
        <layout class="QVBoxLayout" name="layout_number_practice_menu">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -1562,35 +1584,32 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblNumberPracticeTitle">
-          <property name="text">
-           <string>NUMBER SYSTEM PRACTICE</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>NUMBER SYSTEM PRACTICE</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
         <item>
          <spacer name="spacer_np_top">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -1602,9 +1621,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnBinaryToDecimal">
-          <property name="text">
-           <string>Binary -&gt; Decimal</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1612,7 +1628,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Binary -&gt; Decimal</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1621,9 +1640,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnAsciiToBinary">
-          <property name="text">
-           <string>ASCII -&gt; Binary</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1631,7 +1647,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>ASCII -&gt; Binary</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1640,9 +1659,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnNumberPracticeBack">
-          <property name="text">
-           <string>Back</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1650,7 +1666,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -1660,7 +1679,7 @@
         <item>
          <spacer name="spacer_np_bottom">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -1674,6 +1693,9 @@
       </widget>
       <widget class="QWidget" name="page_number_question">
        <layout class="QVBoxLayout" name="layout_number_question">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -1686,28 +1708,25 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblNumberQuestionTitle">
-          <property name="text">
-           <string>Binary -&gt; Decimal</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>Binary -&gt; Decimal</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
@@ -1716,14 +1735,14 @@
           <property name="text">
            <string>Attempts remaining: 3</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>liveStat</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
           </property>
          </widget>
         </item>
@@ -1732,35 +1751,32 @@
           <property name="text">
            <string>What is the decimal equivalent of 1010101?</string>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>questionText</string>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
-          </property>
          </widget>
         </item>
         <item>
          <widget class="QLineEdit" name="txtNumberAnswer">
-          <property name="placeholderText">
-           <string>Your answer</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
             <height>38</height>
            </size>
           </property>
+          <property name="placeholderText">
+           <string>Your answer</string>
+          </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btnNumberSubmit">
-          <property name="text">
-           <string>Submit</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1768,7 +1784,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Submit</string>
           </property>
           <property name="role" stdset="0">
            <string>primary</string>
@@ -1780,22 +1799,19 @@
           <property name="text">
            <string/>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>feedback</string>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
-          </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btnNumberBack">
-          <property name="text">
-           <string>Back</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1803,7 +1819,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -1814,6 +1833,9 @@
       </widget>
       <widget class="QWidget" name="page_explain">
        <layout class="QVBoxLayout" name="layout_explain">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -1826,28 +1848,25 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblExplainTitle">
-          <property name="text">
-           <string>Explain</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>Explain</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
@@ -1856,9 +1875,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnExplainBack">
-          <property name="text">
-           <string>Back</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1866,7 +1882,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -1877,6 +1896,9 @@
       </widget>
       <widget class="QWidget" name="page_admin_dashboard">
        <layout class="QVBoxLayout" name="layout_admin_dashboard">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -1889,35 +1911,32 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblAdminTitle">
-          <property name="text">
-           <string>ADMIN DASHBOARD</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>ADMIN DASHBOARD</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
         <item>
          <spacer name="spacer_admin_top">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -1929,9 +1948,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnAdminViewLeaderboard">
-          <property name="text">
-           <string>View Full Leaderboard</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1939,7 +1955,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>View Full Leaderboard</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1948,9 +1967,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnAdminViewAccounts">
-          <property name="text">
-           <string>View Registered Accounts</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1958,7 +1974,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>View Registered Accounts</string>
           </property>
           <property name="role" stdset="0">
            <string>secondary</string>
@@ -1967,9 +1986,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnAdminReports">
-          <property name="text">
-           <string>Reports &amp; Charts</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1977,7 +1993,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Reports &amp; Charts</string>
           </property>
           <property name="role" stdset="0">
            <string>primary</string>
@@ -1986,9 +2005,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnAdminReset">
-          <property name="text">
-           <string>Reset Leaderboard</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -1996,7 +2012,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Reset Leaderboard</string>
           </property>
           <property name="role" stdset="0">
            <string>danger</string>
@@ -2005,9 +2024,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnAdminBack">
-          <property name="text">
-           <string>Back to Main Menu</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -2015,7 +2031,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back to Main Menu</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -2025,7 +2044,7 @@
         <item>
          <spacer name="spacer_admin_bottom">
           <property name="orientation">
-           <enum>Qt::Vertical</enum>
+           <enum>Qt::Orientation::Vertical</enum>
           </property>
           <property name="sizeHint" stdset="0">
            <size>
@@ -2039,6 +2058,9 @@
       </widget>
       <widget class="QWidget" name="page_admin_accounts">
        <layout class="QVBoxLayout" name="layout_admin_accounts">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -2051,41 +2073,38 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblAdminAccountsTitle">
-          <property name="text">
-           <string>REGISTERED ACCOUNTS</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>REGISTERED ACCOUNTS</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QTableWidget" name="tblAdminAccounts">
-          <property name="columnCount">
-           <number>2</number>
-          </property>
           <property name="editTriggers">
-           <set>QAbstractItemView::NoEditTriggers</set>
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
           </property>
           <property name="selectionMode">
-           <enum>QAbstractItemView::NoSelection</enum>
+           <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
+          </property>
+          <property name="columnCount">
+           <number>2</number>
           </property>
           <attribute name="horizontalHeaderStretchLastSection">
            <bool>true</bool>
@@ -2107,9 +2126,6 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnAdminAccountsBack">
-          <property name="text">
-           <string>Back</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
@@ -2117,7 +2133,10 @@
            </size>
           </property>
           <property name="cursor">
-           <cursorShape>Qt::PointingHandCursor</cursorShape>
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Back</string>
           </property>
           <property name="role" stdset="0">
            <string>ghost</string>
@@ -2128,6 +2147,9 @@
       </widget>
       <widget class="QWidget" name="page_admin_reset_confirm">
        <layout class="QVBoxLayout" name="layout_admin_reset_confirm">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -2140,47 +2162,47 @@
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblResetWarning">
-          <property name="text">
-           <string>This permanently clears every saved score.
-Type YES to confirm.</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>13</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>warningText</string>
+          <property name="text">
+           <string>This permanently clears every saved score.
+Type YES to confirm.</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>warningText</string>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QLineEdit" name="txtResetConfirm">
-          <property name="placeholderText">
-           <string>Type YES to confirm</string>
-          </property>
           <property name="minimumSize">
            <size>
             <width>0</width>
             <height>38</height>
            </size>
           </property>
+          <property name="placeholderText">
+           <string>Type YES to confirm</string>
+          </property>
          </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="row_reset_buttons">
+          <property name="spacing">
+           <number>12</number>
+          </property>
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -2193,14 +2215,8 @@ Type YES to confirm.</string>
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <property name="spacing">
-           <number>12</number>
-          </property>
           <item>
            <widget class="QPushButton" name="btnResetCancel">
-            <property name="text">
-             <string>Cancel</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -2208,7 +2224,10 @@ Type YES to confirm.</string>
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Cancel</string>
             </property>
             <property name="role" stdset="0">
              <string>ghost</string>
@@ -2217,9 +2236,6 @@ Type YES to confirm.</string>
           </item>
           <item>
            <widget class="QPushButton" name="btnResetConfirm">
-            <property name="text">
-             <string>Confirm Reset</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -2227,7 +2243,10 @@ Type YES to confirm.</string>
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Confirm Reset</string>
             </property>
             <property name="role" stdset="0">
              <string>danger</string>
@@ -2241,14 +2260,14 @@ Type YES to confirm.</string>
           <property name="text">
            <string/>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>feedback</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
           </property>
          </widget>
         </item>
@@ -2256,6 +2275,9 @@ Type YES to confirm.</string>
       </widget>
       <widget class="QWidget" name="page_admin_reports">
        <layout class="QVBoxLayout" name="layout_admin_reports">
+        <property name="spacing">
+         <number>14</number>
+        </property>
         <property name="leftMargin">
          <number>28</number>
         </property>
@@ -2268,28 +2290,25 @@ Type YES to confirm.</string>
         <property name="bottomMargin">
          <number>24</number>
         </property>
-        <property name="spacing">
-         <number>14</number>
-        </property>
         <item>
          <widget class="QLabel" name="lblReportsTitle">
-          <property name="text">
-           <string>REPORTS &amp; CHARTS</string>
-          </property>
-          <property name="wordWrap">
-           <bool>true</bool>
-          </property>
           <property name="font">
            <font>
             <pointsize>18</pointsize>
             <bold>true</bold>
            </font>
           </property>
-          <property name="role" stdset="0">
-           <string>pageTitle</string>
+          <property name="text">
+           <string>REPORTS &amp; CHARTS</string>
           </property>
           <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="role" stdset="0">
+           <string>pageTitle</string>
           </property>
          </widget>
         </item>
@@ -2298,6 +2317,9 @@ Type YES to confirm.</string>
         </item>
         <item>
          <layout class="QHBoxLayout" name="row_charts">
+          <property name="spacing">
+           <number>16</number>
+          </property>
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -2310,30 +2332,11 @@ Type YES to confirm.</string>
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <property name="spacing">
-           <number>16</number>
-          </property>
           <item>
-           <widget class="QWidget" name="chartContainerBar">
-            <layout class="QVBoxLayout" name="chartContainerBarLayout"/>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>220</height>
-             </size>
-            </property>
-           </widget>
+           <layout class="QVBoxLayout" name="chartContainerBarLayout"/>
           </item>
           <item>
-           <widget class="QWidget" name="chartContainerPie">
-            <layout class="QVBoxLayout" name="chartContainerPieLayout"/>
-            <property name="minimumSize">
-             <size>
-              <width>0</width>
-              <height>220</height>
-             </size>
-            </property>
-           </widget>
+           <layout class="QVBoxLayout" name="chartContainerPieLayout"/>
           </item>
          </layout>
         </item>
@@ -2342,19 +2345,22 @@ Type YES to confirm.</string>
           <property name="text">
            <string/>
           </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
           <property name="wordWrap">
            <bool>true</bool>
           </property>
           <property name="role" stdset="0">
            <string>feedback</string>
           </property>
-          <property name="alignment">
-           <set>Qt::AlignHCenter|Qt::AlignVCenter</set>
-          </property>
          </widget>
         </item>
         <item>
          <layout class="QHBoxLayout" name="row_reports_buttons">
+          <property name="spacing">
+           <number>12</number>
+          </property>
           <property name="leftMargin">
            <number>0</number>
           </property>
@@ -2367,14 +2373,8 @@ Type YES to confirm.</string>
           <property name="bottomMargin">
            <number>0</number>
           </property>
-          <property name="spacing">
-           <number>12</number>
-          </property>
           <item>
            <widget class="QPushButton" name="btnAdminReportsBack">
-            <property name="text">
-             <string>Back</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -2382,7 +2382,10 @@ Type YES to confirm.</string>
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Back</string>
             </property>
             <property name="role" stdset="0">
              <string>ghost</string>
@@ -2391,9 +2394,6 @@ Type YES to confirm.</string>
           </item>
           <item>
            <widget class="QPushButton" name="btnGenerateReport">
-            <property name="text">
-             <string>Export PDF Report</string>
-            </property>
             <property name="minimumSize">
              <size>
               <width>0</width>
@@ -2401,7 +2401,10 @@ Type YES to confirm.</string>
              </size>
             </property>
             <property name="cursor">
-             <cursorShape>Qt::PointingHandCursor</cursorShape>
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="text">
+             <string>Export PDF Report</string>
             </property>
             <property name="role" stdset="0">
              <string>primary</string>

@@ -1,7 +1,7 @@
 """
 gui package
 =================
-The PySide6 front-end for Logic Gate Academy. `main_window.ui` (a
+The PySide6 front-end for Sirkitry. `main_window.ui` (a
 standard Qt Designer file) defines every screen's layout; `main_window.py`
 loads it at runtime and wires it up to the game logic in `game/`.
 

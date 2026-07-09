@@ -2,7 +2,7 @@
 """
 main.py
 =================
-Entry point for Logic Gate Academy (PySide6 GUI edition).
+Entry point for Sirkitry (PySide6 GUI edition).
 
 Run it with:
     python main.py

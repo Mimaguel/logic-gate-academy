@@ -24,7 +24,7 @@ TUTORIAL_PAGES: List[TutorialPage] = [
     TutorialPage(
         "Welcome",
         """
-Welcome to **Logic Gate Academy**!
+Welcome to **Sirkitry**!
 
 This is an interactive game that teaches the basics of **logic gates**,
 **binary numbers**, and **ASCII encoding**.

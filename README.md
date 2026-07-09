@@ -3,7 +3,7 @@
 ![Image Login](https://github.com/Mimaguel/logic-gate-academy/blob/559b9e0c9e0210a73735c3f5ba57d18ae9fcbc17/assets/Screenshots/2.png)
 ![Image BonusRound](https://github.com/Mimaguel/logic-gate-academy/blob/559b9e0c9e0210a73735c3f5ba57d18ae9fcbc17/assets/Screenshots/3.png)
 
-# Logic Gate Academy
+# Sirkitry
 A desktop game that teaches **logic gates** (all seven: AND, OR, NOT, XOR,
 NAND, NOR, XNOR), **binary numbers**, and **ASCII encoding**. Built with
 **PySide6**, laid out in a **Qt Designer-editable `.ui` file**, styled with
