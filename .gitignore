@@ -1,0 +1,32 @@
+# --- This project's data (never commit real save files/keys) ---
+data/*.enc
+data/*.key
+data/*.json
+data/*.csv
+!data/.gitkeep
+
+# --- Generated reports ---
+reports/*.pdf
+!reports/.gitkeep
+
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+build/
+dist/
+
+# --- Virtual environments ---
+venv/
+.venv/
+env/
+
+# --- Editors / OS cruft ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Environment variables / secrets ---
+.env
